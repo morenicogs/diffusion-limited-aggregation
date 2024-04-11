@@ -46,7 +46,8 @@ function draw() {
 }
 
 function mouseClicked() {
-	dla.init()
+	const newTreePoint = new Walker(mouseX, mouseY, settings.walkersRadius)
+	dla.tree.push(newTreePoint)
 }
 
 

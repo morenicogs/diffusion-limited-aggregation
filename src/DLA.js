@@ -8,7 +8,7 @@ class DLA {
 	}
 
 	init() {
-		for (let i = 0; i <1250; i++) {
+		for (let i = 0; i < settings.particlePopulation; i++) {
 			const newWalker = new Walker(random(0, width-0), random(0,height-0), this.overallRadius)
 			this.walkers.push(newWalker)
 		}
